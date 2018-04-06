@@ -1,0 +1,9 @@
+{
+    "name": "Context Parameter Validation",
+    "level": "WARN",
+    "fileLocations": ["context"],
+    "filePattern": ".*(.item)",
+    "validationType": "content/xml",
+    "sourceXpath": "//contextParameter/@name",
+    "assertionRegex": "[A-Z]*"
+}
