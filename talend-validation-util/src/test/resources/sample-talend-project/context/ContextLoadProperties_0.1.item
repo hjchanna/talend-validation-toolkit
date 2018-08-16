@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="isContextLoaded" prompt="isContextLoaded?" promptNeeded="false" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="contextFilePath" prompt="contextFilePath?" promptNeeded="false" type="id_String" value="&quot;D:/Talend-Mitra/arm2/Data/Inputs/Heshawa.cfg&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="MitraServer">
+    <contextParameter comment="" name="isContextLoaded" prompt="isContextLoaded?" promptNeeded="false" type="id_Boolean" value=""/>
+    <contextParameter comment="" name="contextFilePath" prompt="contextFilePath?" promptNeeded="false" type="id_String" value="&quot;C:/sftp/ARM2/Inputs/arm2.cfg&quot;"/>
+  </talendfile:ContextType>
+</xmi:XMI>

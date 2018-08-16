@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="ConsumerKey" prompt="ConsumerKey?" promptNeeded="false" type="id_String" value="&quot;n08bYYi3ur1sngek5zAsjM3bYVYa&quot;"/>
+    <contextParameter comment="" name="ConsumerSecret" prompt="ConsumerSecret?" promptNeeded="false" type="id_String" value="&quot;XBBzMUnDUAflqtCjOlvlDWtTtCca&quot;"/>
+    <contextParameter comment="" name="TokenURL" prompt="TokenURL?" promptNeeded="false" type="id_String" value="&quot;http://192.168.200.40:8280/token?grant_type=client_credentials&quot;"/>
+    <contextParameter comment="" name="pageNumber" prompt="pageNumber?" promptNeeded="false" type="id_Integer" value="0"/>
+    <contextParameter comment="" name="restApiUrl" prompt="restApiUrl?" promptNeeded="false" type="id_String" value="&quot;http://192.168.200.40:8280/cost_center/v1.0/get_cost_center&quot;"/>
+    <contextParameter comment="" name="accessToken" prompt="accessToken?" promptNeeded="false" type="id_String" value="&quot;1d0f323bfa4eb4f774ddeb6518f2e5&quot;"/>
+    <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" type="id_String" value="&quot;am_application_scope default&quot;"/>
+    <contextParameter comment="" name="tokenType" prompt="tokenType?" promptNeeded="false" type="id_String" value="&quot;bearer&quot;"/>
+    <contextParameter comment="" name="expiresIn" prompt="expiresIn?" promptNeeded="false" type="id_Long" value="123"/>
+    <contextParameter comment="" name="LoopXpathQueryForExtractJSON" prompt="LoopXpathQueryForExtractJSON?" promptNeeded="false" type="id_String" value="&quot;/xrefs&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Empty">
+    <contextParameter comment="" name="ConsumerKey" prompt="ConsumerKey?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ConsumerSecret" prompt="ConsumerSecret?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="TokenURL" prompt="TokenURL?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="pageNumber" prompt="pageNumber?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="restApiUrl" prompt="restApiUrl?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="accessToken" prompt="accessToken?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="scope" prompt="scope?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="tokenType" prompt="tokenType?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="expiresIn" prompt="expiresIn?" promptNeeded="false" type="id_Long" value=""/>
+    <contextParameter comment="" name="LoopXpathQueryForExtractJSON" prompt="LoopXpathQueryForExtractJSON?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

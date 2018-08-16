@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" confirmationNeeded="false" name="Default">
+  <contextParameter comment="" name="ionUrl" prompt="ionUrl?" promptNeeded="false" type="id_String" value="&quot;https://mingletp-sso.eu2.inforcloudsuite.com:443/TP_TST&quot;"/>
+  <contextParameter comment="" name="ionClientKey" prompt="ionClientKey?" promptNeeded="false" type="id_String" value="&quot;TP_TST~JzfFN4sgM0g0qc_vbx7fuueEtRSLY07xkq-lQbpBBOY&quot;"/>
+  <contextParameter comment="" name="ionClientSecret" prompt="ionClientSecret?" promptNeeded="false" type="id_String" value="&quot;NGLAKjcA2oHn8eF8PG06cGuaK9AfSKx5m8n6dFfvdTIgMLFhXS9Po3QotjqGm27DQ6yBV8X9r4XNhKHR8m6Gpw&quot;"/>
+  <contextParameter comment="" name="ionServiceAccountKey" prompt="ionServiceAccountKey?" promptNeeded="false" type="id_String" value="&quot;TP_TST#4A9xp1kdZj_0ptLwIwJdzS_C7FGw2MnnuToBnFGmIiDxEx0CNioH6jYiFTBSle0_RZ3P9L_UpS9DKcoUoyIhBQ&quot;"/>
+  <contextParameter comment="" name="ionServiceAccountSecret" prompt="ionServiceAccountSecret?" promptNeeded="false" type="id_String" value="&quot;dGqp79VgUahvg7vQHCg5c-_jpTe1V5oWTsTZgfPMqyuIBF10cZ0tzYFzufOk2uYF39wcxIt-uAEVh9bu9atyzA&quot;"/>
+</talendfile:ContextType>

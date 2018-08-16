@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="range" prompt="range?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="intcount" prompt="intcount?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="fileM3andUniverseData" prompt="fileM3andUniverseData?" promptNeeded="false" type="id_String" value="&quot;M3andUniverseData.csv&quot;"/>
+    <contextParameter comment="" name="fileOutputLocation" prompt="fileOutputLocation?" promptNeeded="false" type="id_String" value="&quot;D:/Talend-Mitra/arm2/Outputs/&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="MitraServer">
+    <contextParameter comment="" name="range" prompt="range?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="intcount" prompt="intcount?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="fileM3andUniverseData" prompt="fileM3andUniverseData?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="fileOutputLocation" prompt="fileOutputLocation?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

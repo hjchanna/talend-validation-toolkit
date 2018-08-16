@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" confirmationNeeded="false" name="Default">
+  <contextParameter comment="" name="apiURL" prompt="apiURL?" promptNeeded="false" type="id_String" value="&quot;http://192.168.200.40:8280/cost_center/v1.0/get_cost_center&quot;"/>
+  <contextParameter comment="" name="url" prompt="url?" promptNeeded="false" type="id_Object" value=""/>
+  <contextParameter comment="" name="LoopXpathQueryForExtractJSON" prompt="LoopXpathQueryForExtractJSON?" promptNeeded="false" type="id_String" value="&quot;/xrefs&quot;"/>
+  <contextParameter comment="" name="TableName" prompt="TableName?" promptNeeded="false" type="id_String" value="&quot;cost_center&quot;"/>
+  <contextParameter comment="" name="ConsumerKey" prompt="ConsumerKey?" promptNeeded="false" type="id_String" value="&quot;n08bYYi3ur1sngek5zAsjM3bYVYa&quot;"/>
+  <contextParameter comment="" name="ConsumerSecret" prompt="ConsumerSecret?" promptNeeded="false" type="id_String" value="&quot;XBBzMUnDUAflqtCjOlvlDWtTtCca&quot;"/>
+  <contextParameter comment="" name="TokenURL" prompt="TokenURL?" promptNeeded="false" type="id_String" value="&quot;http://192.168.200.40:8280/token?grant_type=client_credentials&quot;"/>
+  <contextParameter comment="" name="pageNumber" prompt="pageNumber?" promptNeeded="false" type="id_Integer" value="0"/>
+  <contextParameter comment="" name="statusCode" prompt="statusCode?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter comment="" name="body" prompt="body?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter comment="" name="string" prompt="string?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>

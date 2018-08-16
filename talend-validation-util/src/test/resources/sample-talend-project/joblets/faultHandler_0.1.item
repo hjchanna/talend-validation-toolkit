@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.talend.org/mapper" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore">
+  <model:JobletProcess defaultContext="Default">
+    <context confirmationNeeded="false" name="Default">
+      <contextParameter comment="" name="bcc_address" prompt="bcc_address?" promptNeeded="false" repositoryContextId="_r0Qn8OlKEeabP9Hpd-8VfA" type="id_String" value=""/>
+      <contextParameter comment="" name="cc_address" prompt="cc_address?" promptNeeded="false" repositoryContextId="_r0Qn8OlKEeabP9Hpd-8VfA" type="id_String" value=""/>
+      <contextParameter comment="" name="from_address" prompt="from_address?" promptNeeded="false" repositoryContextId="_r0Qn8OlKEeabP9Hpd-8VfA" type="id_String" value=""/>
+      <contextParameter comment="" name="message_body" prompt="message_body?" promptNeeded="false" repositoryContextId="_r0Qn8OlKEeabP9Hpd-8VfA" type="id_String" value=""/>
+      <contextParameter comment="" name="smtp_host" prompt="smtp_host?" promptNeeded="false" repositoryContextId="_r0Qn8OlKEeabP9Hpd-8VfA" type="id_String" value=""/>
+      <contextParameter comment="" name="smtp_password" prompt="smtp_password?" promptNeeded="false" repositoryContextId="_r0Qn8OlKEeabP9Hpd-8VfA" type="id_String" value=""/>
+      <contextParameter comment="" name="smtp_port" prompt="smtp_port?" promptNeeded="false" repositoryContextId="_r0Qn8OlKEeabP9Hpd-8VfA" type="id_String" value=""/>
+      <contextParameter comment="" name="smtp_user" prompt="smtp_user?" promptNeeded="false" repositoryContextId="_r0Qn8OlKEeabP9Hpd-8VfA" type="id_String" value=""/>
+      <contextParameter comment="" name="subject" prompt="subject?" promptNeeded="false" repositoryContextId="_r0Qn8OlKEeabP9Hpd-8VfA" type="id_String" value=""/>
+      <contextParameter comment="" name="to_address" prompt="to_address?" promptNeeded="false" repositoryContextId="_r0Qn8OlKEeabP9Hpd-8VfA" type="id_String" value=""/>
+    </context>
+    <parameters>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value=""/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;C:/Talend/5.6.1/studio/workspace-lc0taldev01/in.csv&quot;"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value=""/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="ORACLE_11"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+      <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT"/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE="/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" value="true"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value=""/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" value="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" value=""/>
+      <elementParameter field="TEXT" name="HEADER_CODE" value=""/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" value=""/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value=""/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" value=""/>
+      <routinesParameter id="_6MdxIN8ZEeanF8hQfbsbKQ" name="DQTechnical"/>
+      <routinesParameter id="_5-UAYN8ZEeanF8hQfbsbKQ" name="DataOperation"/>
+      <routinesParameter id="_6KXfYN8ZEeanF8hQfbsbKQ" name="DataQuality"/>
+      <routinesParameter id="_6LeSoN8ZEeanF8hQfbsbKQ" name="DqStringHandling"/>
+      <routinesParameter id="_6BLuMN8ZEeanF8hQfbsbKQ" name="Mathematical"/>
+      <routinesParameter id="_6Cq78N8ZEeanF8hQfbsbKQ" name="Numeric"/>
+      <routinesParameter id="_6D6SEN8ZEeanF8hQfbsbKQ" name="Relational"/>
+      <routinesParameter id="_6OACMN8ZEeanF8hQfbsbKQ" name="SQLike"/>
+      <routinesParameter id="_6FPHwN8ZEeanF8hQfbsbKQ" name="StringHandling"/>
+      <routinesParameter id="_6GnAwN8ZEeanF8hQfbsbKQ" name="TalendDataGenerator"/>
+      <routinesParameter id="_6IB9EN8ZEeanF8hQfbsbKQ" name="TalendDate"/>
+      <routinesParameter id="_6JQFEN8ZEeanF8hQfbsbKQ" name="TalendString"/>
+    </parameters>
+    <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="192">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1"/>
+      <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\5.6.1\studio\configuration\lib\java"/>
+      <elementParameter field="MEMO_JAVA" name="CODE" value="Logger logger = Logger.getLogger(this.getClass());&#xA;&#xA;String cfgfile = &quot;/data/PIM_DQ/contexts/email.cfg&quot;;&#xA;&#xA;TreeMap&lt;String, String> tmap = new TreeMap&lt;String, String>();&#xA;BufferedReader bfrdr = new BufferedReader(new FileReader(new File(cfgfile)));&#xA;&#xA;String fline;&#xA;while ((fline = bfrdr.readLine()) != null) {&#xA;   &#x9;if (!fline.startsWith(&quot;#&quot;) &amp;&amp; !fline.isEmpty()) {&#xA;       &#x9;String[] pair = fline.trim().split(&quot;=&quot;);&#xA;       &#x9;tmap.put(pair[0].trim(), pair[1].trim());&#xA;   &#x9;}&#xA;}&#xA;&#xA;bfrdr.close();&#xA;&#xA;for(Map.Entry&lt;String,String> entry : tmap.entrySet()) {&#xA;&#x9;String key = entry.getKey();&#xA;&#x9;String value = entry.getValue();&#xA;&#x9;globalMap.put(&quot;cfg_&quot; + key, value);&#xA;}&#xA;&#xA;if (globalMap.get(&quot;cfg_from_address&quot;) != null) {&#xA;&#x9;if (context.from_address == null) {&#xA;&#x9;&#x9;context.from_address = (String)globalMap.get(&quot;cfg_from_address&quot;);&#xA;&#x9;&#x9;logger.info(&quot;context from_address defaulted to &quot; + (String)context.from_address);&#xA;&#x9;} else {&#xA;&#x9;&#x9;if (&quot;&quot;.equals(context.from_address)) {&#xA;&#x9;&#x9;&#x9;context.from_address = (String)globalMap.get(&quot;cfg_from_address&quot;);&#xA;&#x9;&#x9;&#x9;logger.info(&quot;context from_address defaulted to &quot; + (String)context.from_address);&#xA;    &#x9;}&#xA;&#x9;}&#xA;}&#xA;&#xA;if (globalMap.get(&quot;cfg_to_address&quot;) != null) {&#xA;&#x9;if (context.to_address == null) {&#xA;&#x9;&#x9;context.to_address = (String)globalMap.get(&quot;cfg_to_address&quot;);&#xA;&#x9;&#x9;logger.info(&quot;context to_address defaulted to &quot; + (String)context.to_address);&#xA;&#x9;} else {&#xA;&#x9;&#x9;if (&quot;&quot;.equals(context.to_address)) {&#xA;&#x9;&#x9;&#x9;context.to_address = (String)globalMap.get(&quot;cfg_to_address&quot;);&#xA;&#x9;&#x9;&#x9;logger.info(&quot;context to_address defaulted to &quot; + (String)context.to_address);&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}&#xA;&#xA;if (globalMap.get(&quot;cfg_cc_address&quot;) != null) {&#xA;&#x9;if (context.cc_address == null) {&#xA;&#x9;&#x9;context.cc_address = (String)globalMap.get(&quot;cfg_cc_address&quot;);&#xA;&#x9;&#x9;logger.info(&quot;context cc_address defaulted to &quot; + (String)context.cc_address);&#xA;&#x9;}&#xA;}&#xA;&#xA;if (globalMap.get(&quot;cfg_bcc_address&quot;) != null) {&#xA;&#x9;if (context.bcc_address == null) {&#xA;&#x9;&#x9;context.bcc_address = (String)globalMap.get(&quot;cfg_bcc_address&quot;);&#xA;&#x9;&#x9;logger.info(&quot;context bcc_address defaulted to &quot; + (String)context.bcc_address);&#xA;&#x9;}&#xA;}&#xA;&#xA;if (globalMap.get(&quot;cfg_subject&quot;) != null) {&#xA;&#x9;if (context.subject == null) {&#xA;&#x9;&#x9;context.subject = (String)globalMap.get(&quot;cfg_subject&quot;);&#xA;&#x9;&#x9;logger.info(&quot;context subject defaulted to &quot; + (String)context.subject);&#xA;&#x9;}&#xA;}&#xA;&#xA;if (globalMap.get(&quot;cfg_message_body&quot;) != null) {&#xA;&#x9;if (context.message_body == null) {&#xA;&#x9;&#x9;context.message_body = (String)globalMap.get(&quot;cfg_message_body&quot;);&#xA;&#x9;&#x9;logger.info(&quot;context message_body defaulted to &quot; + (String)context.message_body);&#xA;&#x9;}&#xA;}&#xA;&#xA;if (globalMap.get(&quot;cfg_smtp_host&quot;) != null) {&#xA;&#x9;if (context.smtp_host == null) {&#xA;&#x9;&#x9;context.smtp_host = (String)globalMap.get(&quot;cfg_smtp_host&quot;);&#xA;&#x9;&#x9;logger.info(&quot;context smtp_host defaulted to &quot; + (String)context.smtp_host);&#xA;&#x9;} else {&#xA;&#x9;&#x9;if (&quot;&quot;.equals(context.smtp_host)) {&#xA;&#x9;&#x9;&#x9;context.smtp_host = (String)globalMap.get(&quot;cfg_smtp_host&quot;);&#xA;&#x9;&#x9;&#x9;logger.info(&quot;context smtp_host defaulted to &quot; + (String)context.smtp_host);&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}&#xA;&#xA;if (globalMap.get(&quot;cfg_smtp_port&quot;) != null) {&#xA;&#x9;if (context.smtp_port == null) {&#xA;&#x9;&#x9;context.smtp_port = (String)globalMap.get(&quot;cfg_smtp_port&quot;);&#xA;&#x9;&#x9;logger.info(&quot;context smtp_port defaulted to &quot; + (String)context.smtp_port);&#xA;&#x9;} else {&#xA;&#x9;&#x9;if (&quot;&quot;.equals(context.smtp_port)) {&#xA;&#x9;&#x9;&#x9;context.smtp_port = (String)globalMap.get(&quot;cfg_smtp_port&quot;);&#xA;&#x9;&#x9;&#x9;logger.info(&quot;context smtp_port defaulted to &quot; + (String)context.smtp_port);&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}&#xA;&#xA;if (globalMap.get(&quot;cfg_smtp_user&quot;) != null) {&#xA;&#x9;if (context.smtp_user == null) {&#xA;&#x9;&#x9;context.smtp_user = (String)globalMap.get(&quot;cfg_smtp_user&quot;);&#xA;&#x9;&#x9;logger.info(&quot;context smtp_user defaulted to &quot; + (String)context.smtp_user);&#xA;&#x9;} else {&#xA;&#x9;&#x9;if (&quot;&quot;.equals(context.smtp_user)) {&#xA;&#x9;&#x9;&#x9;context.smtp_user = (String)globalMap.get(&quot;cfg_smtp_user&quot;);&#xA;&#x9;&#x9;&#x9;logger.info(&quot;context smtp_user defaulted to &quot; + (String)context.smtp_user);&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}&#xA;&#xA;if (globalMap.get(&quot;cfg_smtp_password&quot;) != null) {&#xA;&#x9;Boolean password_updated = false;&#xA;&#x9;&#xA;&#x9;if (context.smtp_password == null) {&#xA;&#x9;&#x9;context.smtp_password = (String)globalMap.get(&quot;cfg_smtp_password&quot;);&#xA;&#x9;&#x9;password_updated = true;&#xA;&#x9;} else {&#xA;&#x9;&#x9;if (&quot;&quot;.equals(context.smtp_password)) {&#xA;&#x9;&#x9;&#x9;context.smtp_password = (String)globalMap.get(&quot;cfg_smtp_password&quot;);&#xA;&#x9;&#x9;&#x9;password_updated = true;&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;&#x9;&#xA;&#x9;if (password_updated) {&#xA;&#x9;&#x9;String smtpPassword = context.smtp_password;&#xA;&#xA;&#x9;&#x9;if (smtpPassword != null) {&#xA;&#x9;&#x9;&#x9;if (smtpPassword.length() > 1) {&#xA;&#x9;&#x9;&#x9;&#x9;// mask password (only log first character)&#xA;&#x9;&#x9;&#x9;&#x9;char[] chars = new char[(smtpPassword.length() - 1)];&#xA;&#x9;&#x9;&#x9;&#x9;Arrays.fill(chars, (char)42);&#xA;&#x9;&#x9;&#x9;&#x9;String mask = new String(chars);&#xA;&#x9;&#x9;&#x9;&#x9;smtpPassword = smtpPassword.substring(0, 1) + mask;&#xA;&#x9;&#x9;&#x9;&#x9;logger.info(&quot;context smtp_password defaulted to &quot; + smtpPassword);&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;}"/>
+      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.io.BufferedReader;&#xA;import java.io.FileReader;&#xA;import java.io.File;&#xA;import java.util.TreeMap;&#xA;import java.util.Map.Entry;&#xA;import java.util.Map;"/>
+      <elementParameter field="TEXT" name="LABEL" value="Initialise Context Variables"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="faultEmailSchema" name="tJava_1">
+        <column comment="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="pid" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="root_pid" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="father_pid" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="50" name="project" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="job" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="50" name="context" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="3" name="priority" nullable="true" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="type" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="origin" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="message" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="3" name="code" nullable="true" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="192" posY="320">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1"/>
+      <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\5.6.1\studio\configuration\lib\java"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+      <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_vGPZUOiKEeabP9Hpd-8VfA-tMap_1-PREVIEW.bmp"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false"/>
+      <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="Add email information"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata comment="Fault Email Schema" connector="FLOW" label="faultEmailSchema" name="faultEmailDetails">
+        <column comment="" key="false" length="0" name="from_address" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="to_address" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="cc_address" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="bcc_address" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="subject" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="message_body" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="smtp_host" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="smtp_port" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="smtp_user" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="smtp_password" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="pid" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="root_pid" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="father_pid" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="50" name="project" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="job" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="50" name="context" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="3" name="priority" nullable="true" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="type" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="origin" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="message" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="3" name="code" nullable="true" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+      <nodeData xsi:type="MapperData">
+        <uiProperties/>
+        <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+        <outputTables sizeState="INTERMEDIATE" name="faultEmailDetails" activateCondensedTool="true" id="_OjeckOJGEeaLYs7dGn1C_A - faultEmailSchema">
+          <mapperTableEntries name="from_address" expression="context.from_address" type="id_String" nullable="true"/>
+          <mapperTableEntries name="to_address" expression="context.to_address" type="id_String" nullable="true"/>
+          <mapperTableEntries name="cc_address" expression="context.cc_address" type="id_String" nullable="true"/>
+          <mapperTableEntries name="bcc_address" expression="context.bcc_address" type="id_String" nullable="true"/>
+          <mapperTableEntries name="subject" expression="context.subject" type="id_String" nullable="true"/>
+          <mapperTableEntries name="message_body" expression="context.message_body" type="id_String" nullable="true"/>
+          <mapperTableEntries name="smtp_host" expression="context.smtp_host" type="id_String" nullable="true"/>
+          <mapperTableEntries name="smtp_port" expression="context.smtp_port" type="id_String" nullable="true"/>
+          <mapperTableEntries name="smtp_user" expression="context.smtp_user" type="id_String" nullable="true"/>
+          <mapperTableEntries name="smtp_password" expression="context.smtp_password" type="id_String" nullable="true"/>
+          <mapperTableEntries name="moment" expression="logCatcherDetails.moment " type="id_Date" nullable="true"/>
+          <mapperTableEntries name="pid" expression="logCatcherDetails.pid " type="id_String" nullable="true"/>
+          <mapperTableEntries name="root_pid" expression="logCatcherDetails.root_pid " type="id_String" nullable="true"/>
+          <mapperTableEntries name="father_pid" expression="logCatcherDetails.father_pid " type="id_String" nullable="true"/>
+          <mapperTableEntries name="project" expression="logCatcherDetails.project " type="id_String" nullable="true"/>
+          <mapperTableEntries name="job" expression="logCatcherDetails.job " type="id_String" nullable="true"/>
+          <mapperTableEntries name="context" expression="logCatcherDetails.context " type="id_String" nullable="true"/>
+          <mapperTableEntries name="priority" expression="logCatcherDetails.priority " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="type" expression="logCatcherDetails.type " type="id_String" nullable="true"/>
+          <mapperTableEntries name="origin" expression="logCatcherDetails.origin " type="id_String" nullable="true"/>
+          <mapperTableEntries name="message" expression="logCatcherDetails.message " type="id_String" nullable="true"/>
+          <mapperTableEntries name="code" expression="logCatcherDetails.code " type="id_Integer" nullable="true"/>
+        </outputTables>
+        <inputTables sizeState="INTERMEDIATE" name="logCatcherDetails" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="moment" type="id_Date" nullable="true"/>
+          <mapperTableEntries name="pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="root_pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="father_pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="project" type="id_String" nullable="true"/>
+          <mapperTableEntries name="job" type="id_String" nullable="true"/>
+          <mapperTableEntries name="context" type="id_String" nullable="true"/>
+          <mapperTableEntries name="priority" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="type" type="id_String" nullable="true"/>
+          <mapperTableEntries name="origin" type="id_String" nullable="true"/>
+          <mapperTableEntries name="message" type="id_String" nullable="true"/>
+          <mapperTableEntries name="code" type="id_Integer" nullable="true"/>
+        </inputTables>
+      </nodeData>
+    </node>
+    <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="448">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1"/>
+      <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\5.6.1\studio\configuration\lib\java"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY"/>
+      <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_OjeckOJGEeaLYs7dGn1C_A - faultEmailSchema"/>
+      <elementParameter field="MEMO_JAVA" name="CODE" value="StringBuilder sbr = new StringBuilder();&#xA;&#xA;String faultString = sbr&#xA;  .append(&quot;{&quot;)&#xA;  .append(&quot;\&quot;from_address\&quot;:\&quot;&quot;+input_row.from_address+&quot;\&quot;&quot;)&#xA;  .append(&quot;,\&quot;to_address\&quot;:\&quot;&quot;+input_row.to_address+&quot;\&quot;&quot;)&#xA;  .append(&quot;,\&quot;cc_address\&quot;:\&quot;&quot;+input_row.cc_address+&quot;\&quot;&quot;)&#xA;  .append(&quot;,\&quot;bcc_address\&quot;:\&quot;&quot;+input_row.bcc_address+&quot;\&quot;&quot;)&#xA;  .append(&quot;,\&quot;subject\&quot;:\&quot;&quot;+input_row.subject+&quot;\&quot;&quot;)&#xA;  .append(&quot;,\&quot;message_body\&quot;:\&quot;&quot;+input_row.message_body+&quot;\&quot;&quot;)&#xA;  .append(&quot;,\&quot;smtp_host\&quot;:\&quot;&quot;+input_row.smtp_host+&quot;\&quot;&quot;)&#xA;  .append(&quot;,\&quot;smtp_port\&quot;:\&quot;&quot;+input_row.smtp_port+&quot;\&quot;&quot;)&#xA;  .append(&quot;,\&quot;smtp_user\&quot;:\&quot;&quot;+input_row.smtp_user+&quot;\&quot;&quot;)&#xA;  .append(&quot;,\&quot;moment\&quot;:\&quot;&quot;+input_row.moment+&quot;\&quot;&quot;)&#xA;  .append(&quot;,\&quot;pid\&quot;:\&quot;&quot;+input_row.pid+&quot;\&quot;&quot;)&#xA;  .append(&quot;,\&quot;root_pid\&quot;:\&quot;&quot;+input_row.root_pid+&quot;\&quot;&quot;)&#xA;  .append(&quot;,\&quot;father_pid\&quot;:\&quot;&quot;+input_row.father_pid+&quot;\&quot;&quot;)&#xA;  .append(&quot;,\&quot;project\&quot;:\&quot;&quot;+input_row.project+&quot;\&quot;&quot;)&#xA;  .append(&quot;,\&quot;job\&quot;:\&quot;&quot;+input_row.job+&quot;\&quot;&quot;)&#xA;  .append(&quot;,\&quot;context\&quot;:\&quot;&quot;+input_row.context+&quot;\&quot;&quot;)&#xA;  .append(&quot;,\&quot;priority\&quot;:\&quot;&quot;+input_row.priority+&quot;\&quot;&quot;)&#xA;  .append(&quot;,\&quot;type\&quot;:\&quot;&quot;+input_row.type+&quot;\&quot;&quot;)&#xA;  .append(&quot;,\&quot;origin\&quot;:\&quot;&quot;+input_row.origin+&quot;\&quot;&quot;)&#xA;  .append(&quot;,\&quot;message\&quot;:\&quot;&quot;+input_row.message+&quot;\&quot;&quot;)  &#xA;  .append(&quot;,\&quot;code\&quot;:\&quot;&quot;+input_row.code+&quot;\&quot;&quot;)&#xA;  .append(&quot;}&quot;)  &#xA;  .toString();&#xA;&#xA;switch (input_row.priority){&#xA;    case 6:&#xA;        logger.fatal(faultString);&#xA;        break;&#xA;    case 5:&#xA;        logger.error(faultString);&#xA;        break;&#xA;    default:&#xA;        logger.info(faultString);&#xA;        break;&#xA;}&#xA;&#xA;output_row.from_address = input_row.from_address;&#xA;output_row.to_address = input_row.to_address;&#xA;output_row.cc_address = input_row.cc_address;&#xA;output_row.bcc_address = input_row.bcc_address;&#xA;output_row.subject = input_row.subject;&#xA;output_row.message_body = input_row.message_body;&#xA;output_row.smtp_host = input_row.smtp_host;&#xA;output_row.smtp_port = input_row.smtp_port;&#xA;output_row.smtp_user = input_row.smtp_user;&#xA;output_row.smtp_password = input_row.smtp_password;&#xA;output_row.moment = input_row.moment;&#xA;output_row.pid = input_row.pid;&#xA;output_row.root_pid = input_row.root_pid;&#xA;output_row.father_pid = input_row.father_pid;&#xA;output_row.project = input_row.project;&#xA;output_row.job = input_row.job;&#xA;output_row.context = input_row.context;&#xA;output_row.priority = input_row.priority;&#xA;output_row.type = input_row.type;&#xA;output_row.origin = input_row.origin;&#xA;output_row.message = input_row.message;&#xA;output_row.code = input_row.code;"/>
+      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.util.List;&#xA;import org.apache.log4j.Logger;"/>
+      <elementParameter field="TEXT" name="LABEL" value="Log Fault"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="faultEmailSchema" name="tJavaRow_1">
+        <column comment="" key="false" length="0" name="from_address" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="to_address" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="cc_address" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="bcc_address" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="subject" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="message_body" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="smtp_host" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="smtp_port" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="smtp_user" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="smtp_password" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="pid" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="root_pid" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="father_pid" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="50" name="project" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="job" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="50" name="context" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="3" name="priority" nullable="true" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="type" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="origin" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="message" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="3" name="code" nullable="true" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="192" posY="576">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3"/>
+      <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Talend\5.6.1\studio\configuration\lib\java"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+      <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_vGPZUOiKEeabP9Hpd-8VfA-tMap_3-PREVIEW.bmp"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false"/>
+      <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="Map Fault Details to Send Email Schema"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata comment="" connector="FLOW" label="sendEmail" name="emailMessage">
+        <column comment="" key="false" length="0" name="to_address" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="from_address" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="cc_address" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="bcc_address" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="subject" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="message_body" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="smtp_host" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="smtp_port" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="smtp_user" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="smtp_password" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      </metadata>
+      <nodeData xsi:type="MapperData">
+        <uiProperties/>
+        <varTables sizeState="INTERMEDIATE" name="Var">
+          <mapperTableEntries name="momentStr" expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, faultDetails.moment); " type="id_String"/>
+        </varTables>
+        <outputTables sizeState="INTERMEDIATE" name="emailMessage" activateCondensedTool="true" id="_60rw4OFMEeawB9UxKO3lUw - sendEmail">
+          <mapperTableEntries name="to_address" expression="faultDetails.to_address " type="id_String" nullable="true"/>
+          <mapperTableEntries name="from_address" expression="faultDetails.from_address " type="id_String" nullable="true"/>
+          <mapperTableEntries name="cc_address" expression="faultDetails.cc_address " type="id_String" nullable="true"/>
+          <mapperTableEntries name="bcc_address" expression="faultDetails.bcc_address " type="id_String" nullable="true"/>
+          <mapperTableEntries name="subject" expression="faultDetails.subject " type="id_String" nullable="true"/>
+          <mapperTableEntries name="message_body" expression="faultDetails.message_body + &quot;\n&quot; + Var.momentStr + &quot;|&quot; + faultDetails.project + &quot;|&quot; + faultDetails.job + &quot;|&quot; + faultDetails.context + &quot;|&quot; + faultDetails.priority + &quot;|&quot; + faultDetails.type + &quot;|&quot; + faultDetails.message + &quot;|&quot; + faultDetails.code " type="id_String" nullable="true"/>
+          <mapperTableEntries name="smtp_host" expression="faultDetails.smtp_host " type="id_String" nullable="true"/>
+          <mapperTableEntries name="smtp_port" expression="faultDetails.smtp_port " type="id_String" nullable="true"/>
+          <mapperTableEntries name="smtp_user" expression="faultDetails.smtp_user " type="id_String" nullable="true"/>
+          <mapperTableEntries name="smtp_password" expression="faultDetails.smtp_password " type="id_String" nullable="true"/>
+        </outputTables>
+        <inputTables sizeState="INTERMEDIATE" name="faultDetails" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="from_address" type="id_String" nullable="true"/>
+          <mapperTableEntries name="to_address" type="id_String" nullable="true"/>
+          <mapperTableEntries name="cc_address" type="id_String" nullable="true"/>
+          <mapperTableEntries name="bcc_address" type="id_String" nullable="true"/>
+          <mapperTableEntries name="subject" type="id_String" nullable="true"/>
+          <mapperTableEntries name="message_body" type="id_String" nullable="true"/>
+          <mapperTableEntries name="smtp_host" type="id_String" nullable="true"/>
+          <mapperTableEntries name="smtp_port" type="id_String" nullable="true"/>
+          <mapperTableEntries name="smtp_user" type="id_String" nullable="true"/>
+          <mapperTableEntries name="smtp_password" type="id_String" nullable="true"/>
+          <mapperTableEntries name="moment" type="id_Date" nullable="true"/>
+          <mapperTableEntries name="pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="root_pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="father_pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="project" type="id_String" nullable="true"/>
+          <mapperTableEntries name="job" type="id_String" nullable="true"/>
+          <mapperTableEntries name="context" type="id_String" nullable="true"/>
+          <mapperTableEntries name="priority" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="type" type="id_String" nullable="true"/>
+          <mapperTableEntries name="origin" type="id_String" nullable="true"/>
+          <mapperTableEntries name="message" type="id_String" nullable="true"/>
+          <mapperTableEntries name="code" type="id_Integer" nullable="true"/>
+        </inputTables>
+      </nodeData>
+    </node>
+    <node componentName="sendEmail" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="192" posY="736">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="sendEmail_1"/>
+      <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+      <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+      <elementParameter field="CHECK" name="DUMMY" value="false"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="CHECK" name="START" value="false"/>
+      <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="0.1"/>
+      <elementParameter field="TEXT" name="LABEL" value="sendEmail"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" name="sendEmail_1">
+        <column comment="" key="false" length="0" name="to_address" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="from_address" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="cc_address" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="bcc_address" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="subject" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="message_body" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="smtp_host" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="smtp_port" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="smtp_user" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="smtp_password" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      </metadata>
+      <metadata connector="OUTPUT_1" name="OUTPUT_1">
+        <column comment="" key="false" length="0" name="to_address" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="from_address" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="cc_address" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="bcc_address" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="subject" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="message_body" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="smtp_host" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="smtp_port" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="smtp_user" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="smtp_password" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <connection connectorName="FLOW" label="logCatcherDetailsOrig" lineStyle="0" metaname="INPUT_1" offsetLabelX="0" offsetLabelY="0" source="INPUT_1" target="tJava_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+        <elementValue elementRef="TRACE_COLUMN" value="moment"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="root_pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="father_pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="project"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="job"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="context"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="priority"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="type"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="origin"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="message"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="code"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="logCatcherDetailsOrig"/>
+    </connection>
+    <connection connectorName="FLOW" label="logCatcherDetails" lineStyle="0" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tMap_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+        <elementValue elementRef="TRACE_COLUMN" value="moment"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="root_pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="father_pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="project"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="job"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="context"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="priority"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="type"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="origin"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="message"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="code"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="logCatcherDetails"/>
+    </connection>
+    <connection connectorName="FLOW" label="faultEmailDetails" lineStyle="0" metaname="faultEmailDetails" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tJavaRow_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+        <elementValue elementRef="TRACE_COLUMN" value="from_address"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="to_address"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="cc_address"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="bcc_address"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="subject"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="message_body"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="smtp_host"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="smtp_port"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="smtp_user"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="smtp_password"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="moment"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="root_pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="father_pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="project"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="job"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="context"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="priority"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="type"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="origin"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="message"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="code"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="faultEmailDetails"/>
+    </connection>
+    <connection connectorName="FLOW" label="faultDetails" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tMap_3">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+        <elementValue elementRef="TRACE_COLUMN" value="from_address"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="to_address"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="cc_address"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="bcc_address"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="subject"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="message_body"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="smtp_host"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="smtp_port"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="smtp_user"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="smtp_password"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="moment"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="root_pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="father_pid"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="project"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="job"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="context"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="priority"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="type"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="origin"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="message"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="code"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="faultDetails"/>
+    </connection>
+    <connection connectorName="FLOW" label="emailMessage" lineStyle="0" metaname="emailMessage" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="sendEmail_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+        <elementValue elementRef="TRACE_COLUMN" value="to_address"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="from_address"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="cc_address"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="bcc_address"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="subject"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="message_body"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="smtp_host"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="smtp_port"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="smtp_user"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="smtp_password"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="emailMessage"/>
+    </connection>
+    <connection connectorName="OUTPUT_1" label="row1" lineStyle="0" metaname="sendEmail_1" offsetLabelX="0" offsetLabelY="0" source="sendEmail_1" target="OUTPUT_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+        <elementValue elementRef="TRACE_COLUMN" value="to_address"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="from_address"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="cc_address"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="bcc_address"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="subject"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="message_body"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="smtp_host"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="smtp_port"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="smtp_user"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="smtp_password"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1"/>
+    </connection>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_1"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+    </subjob>
+    <jobletNodes componentName="INPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="192" posY="64" input="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="CHECK" name="START" value="true"/>
+      <elementParameter field="TEXT" name="LABEL" value="logCatcher Details"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" label="faultEmailSchema" name="INPUT_1">
+        <column comment="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="pid" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="root_pid" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="20" name="father_pid" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="50" name="project" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="job" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="50" name="context" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="3" name="priority" nullable="true" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="type" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="origin" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="255" name="message" nullable="true" pattern="" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" defaultValue="" key="false" length="3" name="code" nullable="true" pattern="" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+    <jobletNodes componentName="OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="192" posY="864">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OUTPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="false"/>
+      <elementParameter field="CHECK" name="START" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="OUTPUT_1"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" name="OUTPUT_1">
+        <column comment="" key="false" length="0" name="to_address" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="from_address" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="cc_address" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="bcc_address" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="subject" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="message_body" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="smtp_host" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="smtp_port" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="smtp_user" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="0" name="smtp_password" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
+  </model:JobletProcess>
+  <TalendProperties:ByteArray innerContent="89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7AF40000032C49444154789CC5975B4853711CC7BF1114410F3D48F510D45BD09B19E483B76A1084D9249D9897D49A9754EAC9A07A28A3B7E84AE55113350DCD4B8E5444F38268B99CBD88D10531422B2B3412F421EADBEF781CD8B6B3EDCC5983CF7E3B3BDB7E9FF3FB7FCF390C24F13F597C0A0F0F7FAFE27CF35F6E07FC0311FBF6CCE554623E5B01A34CA18C34EDFE955C81F280048C905D8FED795598CFAF06CF7781975E8045FD604E23682D0553CAF0D6F0121821AF1AB367EAC13BAFC1AA0F60D9047875143CFB0CCC7A02669483490A4602CA8080E5B81D7D1D2CB915E0CD5760E334D839073EFE0A968CCB2446C0DCA760429D4C4296254E41845E53DD0CF814A8414F619DD6D0F60D1CFC09B6CE6853B8FC123CD50DC637C91444E0A8826623021E71FDA2B5121F0B44E0864CE0C124D8F405AC9D026FBD012F4816AC9DE0E1063055041215F41A5902BF0432ABD09B5B035E7480D7C6C0DBD2F8BAC814CBF84F4B10532403A65A30DDC70402CEC0B14A5CB1DE07F365D44512BA737609DF73B0B00F3CDE0EC63E0263CAB50C1C519018F40CC8634D6639E633E4144C6F93D477688D936CE0213933A224A0C9D23C45C1ACB7A30E3803F2D81893BDA5E6440998269330CB721C7C28475D051E28D5469FA6602156C136A3A7A15F02533F2698DA14C6B08490FD96BB78671591938A469682DF6605E37B15348429D810F4EB80B3B95A97A61122AC8F2B8165F97A4BF362A147D81AB40C389B378EDDA3AF2392C6EB8422A152D8B1E20C1869EE22922B3884CD016720D0E64B026B851C41F12B03A12633D58F7AC39FC60E07A32593D443F66FF2980155A05D6EA47D9231FB24393A4D8ECF909FE6C8EF0BC605A47A44DD171919FDD92D036A83D512181EFE1B75BF5B06822560B76B02523934E4194F02869740BD2C7B12181CD404A4BA3130A061D95944E9D962580072CBC5B0E0F08E2AD0DFAF8F9BC0E20BFF9620DAD712F4F4681390AA8BDB120453A0AB4B1390AACB4A32E053A0A3431390AA4BC019F047A0AD4D1390BA486BAB3BAB9A019B4D1390AACBAA66A0B9591390AA8B6E069CD7FC5DF1058BB86E3B05BCFDD56A6860B429D44C15E7F5DF75DB63065C7EB05BC5CBF64AFF9CB6B865E07FF1073F036B3DCBCB274D0000000049454E44AE426082"/>
+</xmi:XMI>

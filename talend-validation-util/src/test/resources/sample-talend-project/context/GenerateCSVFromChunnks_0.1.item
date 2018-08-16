@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="fileOutputLocation" prompt="fileOutputLocation?" promptNeeded="false" type="id_String" value="&quot;D:/Talend-Mitra/arm2/Data/Outputs/&quot;"/>
+    <contextParameter comment="" name="M3XMLSplitFilesFolder" prompt="M3XMLSplitFilesFolder?" promptNeeded="false" type="id_String" value="&quot;XMLChunks/&quot;"/>
+    <contextParameter comment="" name="xpath" prompt="xpath?" promptNeeded="false" type="id_String" value="&quot;/SyncTPAROpenItems/DataArea/TPAROpenItems/OpenItem&quot;"/>
+    <contextParameter comment="" name="M3CSVOutputFile" prompt="M3CSVOutputFile?" promptNeeded="false" type="id_String" value="&quot;openItemsM3.csv&quot;"/>
+    <contextParameter comment="" name="costCenterCodes" prompt="costCenterCodes?" promptNeeded="false" type="id_Object" value=""/>
+    <contextParameter comment="" name="fileInputLocation" prompt="fileInputLocation?" promptNeeded="false" type="id_String" value="&quot;D:/Talend-Mitra/arm2/Data/Inputs/&quot;"/>
+    <contextParameter comment="" name="filePath" prompt="filePath?" promptNeeded="false" type="id_String" value="&quot;ExampleSyncTPAROpenItems.xml&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="MItraServer">
+    <contextParameter comment="" name="fileOutputLocation" prompt="fileOutputLocation?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="M3XMLSplitFilesFolder" prompt="M3XMLSplitFilesFolder?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="xpath" prompt="xpath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="M3CSVOutputFile" prompt="M3CSVOutputFile?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="costCenterCodes" prompt="costCenterCodes?" promptNeeded="false" type="id_Object" value=""/>
+    <contextParameter comment="" name="fileInputLocation" prompt="fileInputLocation?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="filePath" prompt="filePath?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>

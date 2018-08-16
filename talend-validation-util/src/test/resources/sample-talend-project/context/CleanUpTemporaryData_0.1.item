@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="fileOutputLocation" prompt="fileOutputLocation?" promptNeeded="false" type="id_String" value="&quot;D:/Talend-Mitra/arm2/Outputs/&quot;"/>
+    <contextParameter comment="" name="M3XMLSplitFilesFolder" prompt="M3XMLSplitFilesFolder?" promptNeeded="false" type="id_String" value="&quot;XMLChunks/&quot;"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="MitraServer">
+    <contextParameter comment="" name="fileOutputLocation" prompt="fileOutputLocation?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="M3XMLSplitFilesFolder" prompt="M3XMLSplitFilesFolder?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>
