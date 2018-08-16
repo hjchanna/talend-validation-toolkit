@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/talend-validation-maven-plugin/talend-validation-maven-plugin.iml" filepath="$PROJECT_DIR$/talend-validation-maven-plugin/talend-validation-maven-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/talend-validation-toolkit.iml" filepath="$PROJECT_DIR$/talend-validation-toolkit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/talend-validation-util/talend-validation-util.iml" filepath="$PROJECT_DIR$/talend-validation-util/talend-validation-util.iml" />
+    </modules>
+  </component>
+</project>

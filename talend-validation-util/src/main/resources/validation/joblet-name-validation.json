@@ -1,0 +1,12 @@
+{
+  "name": "Joblet Name Validation",
+  "description":"A joblet name should be in Camel Case",
+  "level": "WARN",
+  "fileLocations": [
+    "joblets"
+  ],
+  "includeSubDirectories": true,
+  "filePattern": ".*(.item)",
+  "validationType": "filename",
+  "assertionRegex": "[a-z][A-Za-z]*_[0-9]*.[0-9]*.item"
+}

@@ -1,8 +1,0 @@
-{
-    "name": "Joblet Name Validation",
-    "level": "WARN",
-    "fileLocations": ["joblets"],
-    "filePattern": ".*(.item)",
-    "validationType": "filename",
-    "assertionRegex": "[a-z]*"
-}
