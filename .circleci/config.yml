@@ -24,5 +24,6 @@ jobs:
         paths:
         - ~/.m2
         key: v1-dependencies-{{ checksum "pom.xml" }}
-    # build
     - run: mvn clean install
+    - run: mvn cobertura:cobertura
+    - run: bash <(curl -s https://codecov.io/bash)
