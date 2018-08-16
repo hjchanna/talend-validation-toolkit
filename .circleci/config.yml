@@ -25,4 +25,4 @@ jobs:
         - ~/.m2
         key: v1-dependencies-{{ checksum "pom.xml" }}
     # build
-    - run: clean package
+    - run: clean install
