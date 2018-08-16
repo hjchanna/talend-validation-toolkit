@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.hjchanna.talend.validation.validator;
+package com.hjchanna.talend.validator;
 
-import com.hjchanna.talend.validation.dto.ValidationRequest;
-import com.hjchanna.talend.validation.dto.ValidationResponse;
-import com.hjchanna.talend.validation.util.FileUtil;
+import com.hjchanna.talend.util.FileUtil;
+import com.hjchanna.talend.dto.ValidationRequest;
+import com.hjchanna.talend.dto.ValidationResponse;
 import org.apache.log4j.Logger;
 
 import java.io.File;

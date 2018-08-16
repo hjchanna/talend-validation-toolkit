@@ -1,8 +1,8 @@
-package com.hjchanna.talend.validation;
+package com.hjchanna.talend;
 
-import com.hjchanna.talend.validation.dto.ValidationRequest;
-import com.hjchanna.talend.validation.dto.ValidationResponse;
-import com.hjchanna.talend.validation.validator.TalendValidator;
+import com.hjchanna.talend.dto.ValidationRequest;
+import com.hjchanna.talend.dto.ValidationResponse;
+import com.hjchanna.talend.validator.TalendValidator;
 import org.apache.log4j.Logger;
 
 import java.io.File;

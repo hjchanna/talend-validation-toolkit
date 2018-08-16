@@ -1,6 +1,6 @@
-package com.hjchanna.talend.validation;
+package com.hjchanna.talend;
 
-import com.hjchanna.talend.validation.dto.ValidationResponse;
+import com.hjchanna.talend.dto.ValidationResponse;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;

@@ -1,6 +1,6 @@
-package com.hjchanna.talend.validation;
+package com.hjchanna.talend;
 
-import com.hjchanna.talend.validation.dto.ValidationResponse;
+import com.hjchanna.talend.dto.ValidationResponse;
 import org.junit.Test;
 
 import java.io.File;

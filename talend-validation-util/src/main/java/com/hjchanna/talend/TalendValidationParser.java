@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.hjchanna.talend.validation;
+package com.hjchanna.talend;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.hjchanna.talend.validation.dto.ValidationRequest;
+import com.hjchanna.talend.dto.ValidationRequest;
 import org.apache.log4j.Logger;
 
 import java.io.IOException;

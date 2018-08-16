@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.hjchanna.talend.validation;
+package com.hjchanna.talend;
 
-import com.hjchanna.talend.validation.dto.ValidationRequest;
-import com.hjchanna.talend.validation.validator.ContentXmlValidator;
-import com.hjchanna.talend.validation.validator.FileNameValidator;
-import com.hjchanna.talend.validation.validator.TalendValidator;
+import com.hjchanna.talend.dto.ValidationRequest;
+import com.hjchanna.talend.validator.ContentXmlValidator;
+import com.hjchanna.talend.validator.FileNameValidator;
+import com.hjchanna.talend.validator.TalendValidator;
 import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
