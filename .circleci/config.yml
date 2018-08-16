@@ -5,6 +5,8 @@
 version: 2
 jobs:
   build:
+    machine:
+      enabled: true
     working_directory: ~/repo
     environment:
       # Customize the JVM maximum heap limit
