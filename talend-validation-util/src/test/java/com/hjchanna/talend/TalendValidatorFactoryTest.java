@@ -1,14 +1,14 @@
 package com.hjchanna.talend;
 
 import com.hjchanna.talend.dto.ValidationRequest;
-import com.hjchanna.talend.dto.ValidationResponse;
 import com.hjchanna.talend.validator.TalendValidator;
 import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class TalendValidatorFactoryTest {
 
