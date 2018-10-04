@@ -30,8 +30,8 @@ public class TalendValidationUtilTest {
                 System.out.println(validationResponse.getValidationRequest().getName());
                 System.out.println("------------------------------------------------------------------------");
 
-                for (String message : validationResponse.getMessages()) {
-                    System.out.println("\t" + message);
+                for (ValidationResponse.ValidationFeedback feedback : validationResponse.getValidationFeedbacks()) {
+                    System.out.println("\t" + feedback);
                 }
                 System.out.println();
             }

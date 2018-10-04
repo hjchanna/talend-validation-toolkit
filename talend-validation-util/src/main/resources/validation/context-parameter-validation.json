@@ -1,7 +1,7 @@
 {
   "name": "Context Parameter Validation",
   "description":"A context variable should be in Camel Case",
-  "level": "WARN",
+  "level": "ERROR",
   "fileLocations": [
     "context"
   ],

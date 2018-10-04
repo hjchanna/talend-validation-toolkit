@@ -5,9 +5,11 @@
  */
 package com.hjchanna.talend.validator;
 
+import com.hjchanna.talend.Constraints;
 import com.hjchanna.talend.util.FileUtil;
 import com.hjchanna.talend.dto.ValidationRequest;
 import com.hjchanna.talend.dto.ValidationResponse;
+import com.hjchanna.talend.util.ValidationUtil;
 import org.apache.log4j.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
@@ -57,11 +59,23 @@ public class ContentXmlValidator implements TalendValidator {
                     for (int i = 0; i < nodeList.getLength(); i++) {
                         String sourceValue = nodeList.item(i).getNodeValue();
 
-                        boolean mathches = sourceValue.matches(validationRequest.getAssertionRegex());
-                        if (!mathches) {
-                            String fileNameWithoutExtension = FileUtil.getFileRelativePathWithoutExtension(validationDir, sourceFile);
+                        boolean matches = sourceValue.matches(validationRequest.getAssertionRegex());
+                        LOGGER.debug("Validated xml node " + sourceValue + " of " + sourceFile.getName() + " against regex '" + validationRequest.getAssertionRegex() + "', matches: " + matches);
 
-                            validationResponse.getMessages().add(validationRequest.getName() + " is failed for object " + sourceValue + " in " + fileNameWithoutExtension);
+                        String fileNameWithoutExtension = FileUtil.getFileRelativePathWithoutExtension(validationDir, sourceFile);
+
+                        if (!matches) {
+                            //validation fails
+                            validationResponse.addFeedback(
+                                    ValidationUtil.getValidationResponseLevel(validationRequest.getLevel()),
+                                    validationRequest.getName() + " is failed for object " + sourceValue + " in " + fileNameWithoutExtension
+                            );
+                        } else {
+                            //validation success
+                            validationResponse.addFeedback(
+                                    Constraints.RESPONSE_SUCCESS,
+                                    validationRequest.getName() + " is success for object " + sourceValue + " in " + fileNameWithoutExtension
+                            );
                         }
                     }
                 } catch (ParserConfigurationException ex) {
@@ -77,7 +91,7 @@ public class ContentXmlValidator implements TalendValidator {
             }
         }
 
-        LOGGER.info("finished validation of '" + validationRequest.getName() + "', validation fail count: " + validationResponse.getMessages().size());
+        LOGGER.info("finished validation of '" + validationRequest.getName() + "', validation fail count: " + validationResponse.getValidationFeedbacks().size());
 
         return validationResponse;
     }

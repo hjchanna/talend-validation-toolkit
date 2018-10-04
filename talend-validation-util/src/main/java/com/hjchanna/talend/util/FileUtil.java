@@ -41,7 +41,7 @@ public class FileUtil {
     }
 
     public static String getFileRelativePathWithoutExtension(File root, File child) {
-        String relativePath = child.getAbsolutePath().replace(root.getAbsolutePath()+File.separator, "");
+        String relativePath = child.getAbsolutePath().replace(root.getAbsolutePath() + File.separator, "");
         return relativePath.substring(0, relativePath.lastIndexOf("."));
     }
 }

@@ -14,5 +14,5 @@ import java.io.File;
  */
 public interface TalendValidator {
 
-    public ValidationResponse validate(File root);
+    ValidationResponse validate(File root);
 }

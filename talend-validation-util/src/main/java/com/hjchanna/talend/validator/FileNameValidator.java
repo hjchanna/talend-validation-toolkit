@@ -5,9 +5,11 @@
  */
 package com.hjchanna.talend.validator;
 
+import com.hjchanna.talend.Constraints;
 import com.hjchanna.talend.util.FileUtil;
 import com.hjchanna.talend.dto.ValidationRequest;
 import com.hjchanna.talend.dto.ValidationResponse;
+import com.hjchanna.talend.util.ValidationUtil;
 import org.apache.log4j.Logger;
 
 import java.io.File;
@@ -37,15 +39,28 @@ public class FileNameValidator implements TalendValidator {
 
             for (File sourceFile : sourceFiles) {
                 boolean matches = (sourceFile.getName().matches(validationRequest.getAssertionRegex()));
-                LOGGER.debug("Validating file " + sourceFile.getName() + " against regex '" + validationRequest.getAssertionRegex() + "', matches: " + matches);
+
+                LOGGER.debug("Validated file " + sourceFile.getName() + " against regex '" + validationRequest.getAssertionRegex() + "', matches: " + matches);
+
+                String fileNameWithoutExtension = FileUtil.getFileRelativePathWithoutExtension(validationDir, sourceFile);
+
                 if (!matches) {
-                    String fileNameWithoutExtension = FileUtil.getFileRelativePathWithoutExtension(validationDir, sourceFile);
-                    validationResponse.getMessages().add(validationRequest.getName() + " is failed for object " + fileNameWithoutExtension);
+                    //validation failed
+                    validationResponse.addFeedback(
+                            ValidationUtil.getValidationResponseLevel(validationRequest.getLevel()),
+                            validationRequest.getName() + " is failed for object " + fileNameWithoutExtension
+                    );
+                } else {
+                    //validation success
+                    validationResponse.addFeedback(
+                            Constraints.RESPONSE_SUCCESS,
+                            validationRequest.getName() + " is success for object " + fileNameWithoutExtension
+                    );
                 }
             }
         }
 
-        LOGGER.info("finished validation of '" + validationRequest.getName() + "', validation fail count: " + validationResponse.getMessages().size());
+        LOGGER.info("finished validation of '" + validationRequest.getName() + "', validation fail count: " + validationResponse.getValidationFeedbacks().size());
 
         return validationResponse;
     }

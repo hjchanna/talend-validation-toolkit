@@ -30,18 +30,31 @@ public class TalendValidationMojo extends AbstractMojo {
 
         List<ValidationResponse> validationResponses = TalendValidationUtil.getInstance().validateTalendProject(root);
 
+        boolean breakTheBuild = false;
         for (ValidationResponse validationResponse : validationResponses) {
             getLog().info("--------------------------------------------------------");
             getLog().info("Talend standard validation failed for '" + validationResponse.getValidationRequest().getName() + "'");
             getLog().info("(Rule: " + validationResponse.getValidationRequest().getDescription() + ")");
             getLog().info("--------------------------------------------------------");
 
-            for (String message : validationResponse.getMessages()) {
-                getLog().info("\t" + message);
+            for (ValidationResponse.ValidationFeedback feedback : validationResponse.getValidationFeedbacks()) {
+                switch (feedback.getLevel()) {
+                    case Constraints.RESPONSE_SUCCESS:
+                        getLog().info(feedback.getMessage());
+                        break;
+                    case Constraints.RESPONSE_WARN:
+                        getLog().warn(feedback.getMessage());
+                        break;
+                    case Constraints.RESPONSE_ERROR:
+                        getLog().error(feedback.getMessage());
+
+                        breakTheBuild = true;
+                        break;
+                }
             }
         }
 
-        if (!validationResponses.isEmpty()) {
+        if (breakTheBuild) {
             throw new MojoExecutionException("Talend standard validation failed.");
         }
     }

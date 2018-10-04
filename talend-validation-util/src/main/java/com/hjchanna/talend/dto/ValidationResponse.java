@@ -12,9 +12,8 @@ import java.util.List;
  * @author ChannaJ
  */
 public class ValidationResponse {
-
     private final ValidationRequest validationRequest;
-    private final List<String> messages = new ArrayList<>();
+    private final List<ValidationFeedback> validationFeedbacks = new ArrayList<>();
 
     public ValidationResponse(ValidationRequest validationRequest) {
         this.validationRequest = validationRequest;
@@ -24,8 +23,35 @@ public class ValidationResponse {
         return validationRequest;
     }
 
-    public List<String> getMessages() {
-        return messages;
+    public void addFeedback(String level, String message) {
+        this.validationFeedbacks.add(new ValidationFeedback(level, message));
+    }
+
+    public List<ValidationFeedback> getValidationFeedbacks() {
+        return validationFeedbacks;
+    }
+
+    public class ValidationFeedback {
+        private String level;
+        private String message;
+
+        public ValidationFeedback(String level, String message) {
+            this.level = level;
+            this.message = message;
+        }
+
+        public String getLevel() {
+            return level;
+        }
+
+        public String getMessage() {
+            return message;
+        }
+
+        @Override
+        public String toString() {
+            return "[" + level + "] " + message;
+        }
     }
 
 }

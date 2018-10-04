@@ -33,6 +33,21 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+				<groupId>com.hjchanna.talend</groupId>
+				<artifactId>talend-validation-maven-plugin</artifactId>
+				<version>1.0</version>
+
+				<executions>
+					<execution>
+						<id>validate-talend</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>validate-talend</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 </project>
