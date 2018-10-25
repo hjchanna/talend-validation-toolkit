@@ -17,4 +17,3 @@ public class TalendValidationTool {
         jFrame.setVisible(true);
     }
 }
-

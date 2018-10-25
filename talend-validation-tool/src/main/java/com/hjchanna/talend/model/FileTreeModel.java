@@ -1,12 +1,26 @@
 package com.hjchanna.talend.model;
 
 import java.io.File;
+import java.io.FileFilter;
 import javax.swing.event.TreeModelListener;
 import javax.swing.filechooser.FileSystemView;
 import javax.swing.tree.TreeModel;
 import javax.swing.tree.TreePath;
 
 public class FileTreeModel implements TreeModel {
+    private final FileFilter directoryFileFilter;
+
+    public FileTreeModel() {
+        this.directoryFileFilter = new FileFilter() {
+
+            @Override
+            public boolean accept(File pathname) {
+                return pathname.isDirectory();
+            }
+        };
+    }
+    
+    
 
     @Override
     public Object getRoot() {
@@ -18,7 +32,7 @@ public class FileTreeModel implements TreeModel {
         if(parent instanceof String){
             return FileSystemView.getFileSystemView().getRoots()[index];
         }else if(parent instanceof File){
-            return ((File)parent).listFiles()[index];
+            return ((File)parent).listFiles(directoryFileFilter)[index];
         }
         
         return null;
@@ -29,7 +43,7 @@ public class FileTreeModel implements TreeModel {
         if(parent instanceof String){
             return FileSystemView.getFileSystemView().getRoots().length;
         }else if(parent instanceof File){
-            return ((File)parent).listFiles().length;
+            return ((File)parent).listFiles(directoryFileFilter).length;
         }
         
         return 0;
