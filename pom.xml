@@ -23,7 +23,7 @@
     <modules>
         <module>talend-validation-util</module>
         <module>talend-validation-tool</module>
-        <module>talend-validation-maven-plugin</module>
+        <!--<module>talend-validation-maven-plugin</module>-->
     </modules>
 
     <dependencies>
