@@ -1,0 +1,14 @@
+{
+  "name": "Component Name Length Validation",
+  "description":"Component name length should be less than 25 characters",
+  "level": "WARN",
+  "fileLocations": [
+    "process",
+    "joblets"
+  ],
+  "includeSubDirectories": true,
+  "filePattern": ".*(.item)",
+  "validationType": "content/xml",
+  "sourceXpath": "//node/elementParameter[@name='LABEL']/@value",
+  "assertionRegex": "(\\w|\\s){0,25}"
+}

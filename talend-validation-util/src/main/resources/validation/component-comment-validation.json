@@ -1,0 +1,14 @@
+{
+  "name": "Component Comment Validation",
+  "description":"Each component should have a non-empty comment",
+  "level": "WARN",
+  "fileLocations": [
+    "process",
+    "joblets"
+  ],
+  "includeSubDirectories": true,
+  "filePattern": ".*(.item)",
+  "validationType": "content/xml",
+  "sourceXpath": "//node/elementParameter[@name='COMMENT']/@value",
+  "assertionRegex": ".{1,}"
+}

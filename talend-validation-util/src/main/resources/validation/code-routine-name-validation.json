@@ -1,0 +1,12 @@
+{
+  "name": "Code Routine Name Validation",
+  "description":"Code routines should be according to the format of cr_[group]_[description]",
+  "level": "WARN",
+  "fileLocations": [
+    "code/routines"
+  ],
+  "includeSubDirectories": false,
+  "filePattern": ".*(.item)",
+  "validationType": "filename",
+  "assertionRegex": "cr(_[a-z][a-zA-Z]*)*_[0-9]*.[0-9]*.item"
+}

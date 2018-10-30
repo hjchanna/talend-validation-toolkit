@@ -1,0 +1,14 @@
+{
+  "name": "Component Name Validation",
+  "description":"Component names should be in camel-case and underscore separated",
+  "level": "WARN",
+  "fileLocations": [
+    "process",
+    "joblets"
+  ],
+  "includeSubDirectories": true,
+  "filePattern": ".*(.item)",
+  "validationType": "content/xml",
+  "sourceXpath": "//node/elementParameter[@name='LABEL']/@value",
+  "assertionRegex": "(_{0,1}[a-z][a-zA-Z]+)+"
+}

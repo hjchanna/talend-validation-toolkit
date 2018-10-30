@@ -12,7 +12,7 @@ import static org.junit.Assert.fail;
 
 public class TalendValidationUtilTest {
 
-    @Test
+//    @Test
     public void validateTalendProject() {
         try {
             URI t = TalendValidationUtilTest.class.getClassLoader().getResource(".").toURI();

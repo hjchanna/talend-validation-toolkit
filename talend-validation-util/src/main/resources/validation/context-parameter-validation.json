@@ -1,9 +1,10 @@
 {
   "name": "Context Parameter Validation",
-  "description":"A context variable should be in Camel Case",
+  "description":"Context variables should be in camel-case",
   "level": "ERROR",
   "fileLocations": [
-    "context"
+    "context",
+    "process"
   ],
   "includeSubDirectories": true,
   "filePattern": ".*(.item)",

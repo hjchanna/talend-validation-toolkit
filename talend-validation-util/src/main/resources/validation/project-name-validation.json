@@ -1,0 +1,13 @@
+{
+  "name": "Project name validation",
+  "description":"Project name should be in underscore separated upper-case",
+  "level": "WARN",
+  "fileLocations": [
+    "."
+  ],
+  "includeSubDirectories": true,
+  "filePattern": "talend.PROJECT",
+  "validationType": "content/xml",
+  "sourceXpath": "//TalendProperties:Project/@label",
+  "assertionRegex": "(_{0,1}[A-Z]+)+"
+}

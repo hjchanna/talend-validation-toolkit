@@ -1,0 +1,14 @@
+{
+  "name": "Component Count Validation",
+  "description":"There should be no more than 20 components in a job or joblet",
+  "level": "WARN",
+  "fileLocations": [
+    "process",
+    "joblets"
+  ],
+  "includeSubDirectories": true,
+  "filePattern": ".*(.item)",
+  "validationType": "content/xml",
+  "sourceXpath": "count(//node)",
+  "assertionRegex": "^([0-9]|[1][0-9])$"
+}

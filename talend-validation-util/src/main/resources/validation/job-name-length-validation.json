@@ -1,0 +1,12 @@
+{
+  "name": "Job Name Length Validation",
+  "description":"Job name length should be less than 50 characters",
+  "level": "WARN",
+  "fileLocations": [
+    "process"
+  ],
+  "includeSubDirectories": true,
+  "filePattern": ".*(.item)",
+  "validationType": "filename",
+  "assertionRegex": "(\\w|\\s){0,50}"
+}

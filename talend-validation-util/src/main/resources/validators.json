@@ -1,4 +1,10 @@
 [
+  "validation/code-routine-name-validation.json",
+  "validation/component-comment-validation.json",
+  "validation/component-name-length-validation.json",
+  "validation/component-name-validation.json",
   "validation/context-parameter-validation.json",
+  "validation/job-name-length-validation.json",
+  "validation/job-name-validation.json",
   "validation/joblet-name-validation.json"
 ]

@@ -1,0 +1,12 @@
+{
+  "name": "Job Name Validation",
+  "description":"Job names should be according to the format of job_[group]_[sequence]_[description]",
+  "level": "WARN",
+  "fileLocations": [
+    "process"
+  ],
+  "includeSubDirectories": true,
+  "filePattern": ".*(.item)",
+  "validationType": "filename",
+  "assertionRegex": "job(_([a-z][a-zA-Z]*|[0-9]*))*_[0-9]*.[0-9]*.item"
+}

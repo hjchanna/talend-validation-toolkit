@@ -1,0 +1,13 @@
+{
+  "name": "Project Name Length Validation",
+  "description":"Project name length should be less than 25 characters long",
+  "level": "WARN",
+  "fileLocations": [
+    "."
+  ],
+  "includeSubDirectories": true,
+  "filePattern": "talend.PROJECT",
+  "validationType": "content/xml",
+  "sourceXpath": "//TalendProperties:Project/@label",
+  "assertionRegex": "(\\w|\\s){0,25}"
+}

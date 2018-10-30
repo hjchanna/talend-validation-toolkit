@@ -12,7 +12,7 @@ import static org.junit.Assert.assertNotNull;
 
 public class TalendValidatorFactoryTest {
 
-    @Test
+//    @Test
     public void getValidators() {
         //test get instance
         TalendValidatorFactory talendValidatorFactory = TalendValidatorFactory.getInstance();
