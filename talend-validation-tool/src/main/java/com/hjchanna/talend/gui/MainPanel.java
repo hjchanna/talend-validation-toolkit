@@ -1,13 +1,12 @@
 package com.hjchanna.talend.gui;
 
-import java.io.File;
-import javax.swing.JPanel;
-
 /**
  *
  * @author hjchanna
  */
 public class MainPanel extends javax.swing.JPanel {
+
+    private ProjectsPanel projectsPanel;
 
     public MainPanel() {
         initComponents();
@@ -19,7 +18,7 @@ public class MainPanel extends javax.swing.JPanel {
     private void initOthers() {
         this.projectsPanel = new ProjectsPanel() {
             @Override
-            protected void onTalenProjectSelect(File dir) {
+            protected void onTalenProjectSelect(java.io.File dir) {
                 setView(TalendProjectView.getInstance(dir));
             }
 
@@ -33,10 +32,10 @@ public class MainPanel extends javax.swing.JPanel {
         setView(NonTalendProjectView.getInstance());
     }
 
-    private void setView(JPanel panel) {
+    private void setView(javax.swing.JPanel panel) {
         pnlProjectInfo.removeAll();
         pnlProjectInfo.add(panel);
-        
+
         pnlProjectInfo.revalidate();
         pnlProjectInfo.repaint();
     }
@@ -69,7 +68,6 @@ public class MainPanel extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private ProjectsPanel projectsPanel;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JPanel pnlProjectInfo;

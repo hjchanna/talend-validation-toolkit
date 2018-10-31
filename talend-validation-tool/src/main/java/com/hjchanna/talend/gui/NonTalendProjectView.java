@@ -6,6 +6,8 @@ package com.hjchanna.talend.gui;
  */
 public class NonTalendProjectView extends javax.swing.JPanel {
 
+    private static final NonTalendProjectView INSTANCE = new NonTalendProjectView();
+
     public NonTalendProjectView() {
         initComponents();
     }
@@ -43,7 +45,6 @@ public class NonTalendProjectView extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private static final NonTalendProjectView INSTANCE = new NonTalendProjectView();
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables

@@ -24,6 +24,9 @@ import org.w3c.dom.Node;
  */
 public class TalendProjectView extends javax.swing.JPanel {
 
+    private static final TalendProjectView INSTANCE = new TalendProjectView();
+    private File projectDir;
+
     public TalendProjectView() {
         initComponents();
 
@@ -248,9 +251,6 @@ public class TalendProjectView extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private static final TalendProjectView INSTANCE = new TalendProjectView();
-
-    private File projectDir;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnScan;
     private javax.swing.JLabel jLabel1;

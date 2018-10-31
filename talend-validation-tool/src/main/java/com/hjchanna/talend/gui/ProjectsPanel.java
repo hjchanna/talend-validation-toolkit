@@ -13,6 +13,8 @@ import javax.swing.event.TreeSelectionListener;
  */
 public abstract class ProjectsPanel extends javax.swing.JPanel {
 
+    private boolean isNonTalendProjectSelected = false;
+
     public ProjectsPanel() {
         initComponents();
 
@@ -71,7 +73,6 @@ public abstract class ProjectsPanel extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private boolean isNonTalendProjectSelected = false;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JScrollPane scTreeFiles;
     private javax.swing.JTree treeFiles;

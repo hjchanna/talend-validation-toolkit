@@ -10,9 +10,6 @@ import javax.swing.tree.TreePath;
 
 public class FileTreeModel implements TreeModel {
 
-    public FileTreeModel() {
-    }
-
     @Override
     public Object getRoot() {
         return "ROOT";
@@ -53,22 +50,23 @@ public class FileTreeModel implements TreeModel {
 
     @Override
     public void valueForPathChanged(TreePath path, Object newValue) {
-
+        //do nothing
     }
 
     @Override
     public int getIndexOfChild(Object parent, Object child) {
+        //do nothing
         return 0;
     }
 
     @Override
     public void addTreeModelListener(TreeModelListener l) {
-
+        //do nothing
     }
 
     @Override
     public void removeTreeModelListener(TreeModelListener l) {
-
+        //do nothing
     }
 
     private List<File> listFiles(File parent) {

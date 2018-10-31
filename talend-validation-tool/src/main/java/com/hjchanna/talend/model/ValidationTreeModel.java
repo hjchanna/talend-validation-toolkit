@@ -14,9 +14,6 @@ public class ValidationTreeModel implements TreeModel {
 
     private List<ValidationResponse> validationResponses;
 
-    public ValidationTreeModel() {
-    }
-
     public void setValidationResponses(List<ValidationResponse> validationResponses) {
         this.validationResponses = validationResponses;
     }
@@ -57,19 +54,22 @@ public class ValidationTreeModel implements TreeModel {
 
     @Override
     public void valueForPathChanged(TreePath path, Object newValue) {
+        //do nothing
     }
 
     @Override
     public int getIndexOfChild(Object parent, Object child) {
+        //do nothing
         return 0;
     }
 
     @Override
     public void addTreeModelListener(TreeModelListener l) {
+        //do nothing
     }
 
     @Override
     public void removeTreeModelListener(TreeModelListener l) {
+        //do nothing
     }
-
 }
