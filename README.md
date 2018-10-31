@@ -7,6 +7,7 @@
 ## Installing
 Talend Validation Toolkit can be used for multiple purposes and methods such as;
 * __As a Java Library__ (module: talend-validation-util)
+* __As a Desktop application__ (module: talend-validation-tool)
 * __As a Maven Plugin for Talend Project__ (module: talend-validation-maven-plugin)
 * __TODO: As a Plugin for a Build Tool which configured for remote SVN Talend Project__
 
@@ -21,6 +22,9 @@ TalendValidationUtil validationUtil = TalendValidationUtil.getInstance();
 //validate the talend project
 List<ValidationResponse> validationResponses = validationUtil.validateTalendProject(talendProjectRoot);
 ````
+
+### As a Desktop Application
+Please download an run the `talend-validation-tool.jar` in the release section of this repository. The desktop application allows developers to locate Talend project clonned locally and validate them. 
 
 ### As a Maven Plugin
 Add following plugin configuration to `pom.xml` of the Talend Project.
@@ -41,6 +45,7 @@ Add following plugin configuration to `pom.xml` of the Talend Project.
     </executions>
 </plugin>
 ````
+
 ### As a Build Tool Plugin
 _This feature is still in development stage._
 
@@ -54,6 +59,7 @@ Talend Validation Toolkit has serveral maven modules for the parent project. The
 ````
 | talend-validation-toolkit
 |----| talend-validation-util
+|----| talend-validation-tool
 |----| talend-validation-maven-plugin
 ````
 ### Module: talend-validation-util
