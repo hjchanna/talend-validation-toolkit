@@ -50,6 +50,8 @@ public class TalendValidationMojo extends AbstractMojo {
 
                         breakTheBuild = true;
                         break;
+                    default:
+                        throw new AssertionError();
                 }
             }
         }

@@ -6,7 +6,10 @@ package com.hjchanna.talend.gui;
  */
 public class MainPanel extends javax.swing.JPanel {
 
-    private ProjectsPanel projectsPanel;
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel pnlProjectInfo;
+    private javax.swing.JPanel pnlProjects;
+    // End of variables declaration//GEN-END:variables
 
     public MainPanel() {
         initComponents();
@@ -16,7 +19,7 @@ public class MainPanel extends javax.swing.JPanel {
 
     @SuppressWarnings("unchecked")
     private void initOthers() {
-        this.projectsPanel = new ProjectsPanel() {
+        ProjectsPanel projectsPanel = new ProjectsPanel() {
             @Override
             protected void onTalenProjectSelect(java.io.File dir) {
                 setView(TalendProjectView.getInstance(dir));
@@ -28,7 +31,7 @@ public class MainPanel extends javax.swing.JPanel {
             }
         };
 
-        this.pnlProjects.add(this.projectsPanel);
+        this.pnlProjects.add(projectsPanel);
         setView(NonTalendProjectView.getInstance());
     }
 
@@ -44,7 +47,7 @@ public class MainPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jSplitPane1 = new javax.swing.JSplitPane();
+        javax.swing.JSplitPane jSplitPane1 = new javax.swing.JSplitPane();
         pnlProjects = new javax.swing.JPanel();
         pnlProjectInfo = new javax.swing.JPanel();
 
@@ -67,10 +70,4 @@ public class MainPanel extends javax.swing.JPanel {
             .addComponent(jSplitPane1)
         );
     }// </editor-fold>//GEN-END:initComponents
-
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JSplitPane jSplitPane1;
-    private javax.swing.JPanel pnlProjectInfo;
-    private javax.swing.JPanel pnlProjects;
-    // End of variables declaration//GEN-END:variables
 }

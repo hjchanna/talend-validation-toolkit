@@ -32,9 +32,6 @@ public class FileTreeRenderer extends DefaultTreeCellRenderer {
         }
     }
 
-    public FileTreeRenderer() {
-    }
-
     @Override
     public Component getTreeCellRendererComponent(JTree tree, Object value, boolean sel, boolean expanded, boolean leaf, int row, boolean hasFocus) {
 

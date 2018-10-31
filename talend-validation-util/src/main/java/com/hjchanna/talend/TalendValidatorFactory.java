@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.hjchanna.talend;
 
 import com.hjchanna.talend.dto.ValidationRequest;
@@ -18,6 +13,7 @@ import java.util.List;
  * @author ChannaJ
  */
 public class TalendValidatorFactory {
+
     private static final Logger LOGGER = Logger.getLogger(TalendValidatorFactory.class);
     private static final TalendValidatorFactory INSTANCE = new TalendValidatorFactory();
 

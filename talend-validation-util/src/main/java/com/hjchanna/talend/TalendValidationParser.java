@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.hjchanna.talend;
 
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -19,6 +14,7 @@ import java.util.List;
  * @author ChannaJ
  */
 public class TalendValidationParser {
+
     private static final Logger LOGGER = Logger.getLogger(TalendValidationParser.class);
     private static final TalendValidationParser INSTANCE = new TalendValidationParser();
 
@@ -30,7 +26,8 @@ public class TalendValidationParser {
     }
 
     /**
-     * @return parse validation rules defined in resources and return as ValidationRequest objects
+     * @return parse validation rules defined in resources and return as
+     * ValidationRequest objects
      */
     public List<ValidationRequest> getValidationRequests() {
         List<ValidationRequest> validationRequests = new ArrayList<>();

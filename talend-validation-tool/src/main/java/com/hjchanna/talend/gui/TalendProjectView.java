@@ -11,7 +11,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.util.List;
-import javax.swing.JTree;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import org.w3c.dom.Document;
@@ -23,7 +22,17 @@ import org.w3c.dom.Node;
  * @author ChannaJ
  */
 public class TalendProjectView extends javax.swing.JPanel {
-
+    
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnScan;
+    private javax.swing.JLabel lblCreationDate;
+    private javax.swing.JLabel lblHost;
+    private javax.swing.JLabel lblProductVersion;
+    private javax.swing.JLabel lblProjectLocation;
+    private javax.swing.JLabel lblProjectName;
+    private javax.swing.JLabel lblScanSummary;
+    private javax.swing.JTree treeValidations;
+    // End of variables declaration//GEN-END:variables
     private static final TalendProjectView INSTANCE = new TalendProjectView();
     private File projectDir;
 
@@ -124,7 +133,7 @@ public class TalendProjectView extends javax.swing.JPanel {
         expandAllNodes(treeValidations, 0, treeValidations.getRowCount());
     }
 
-    private void expandAllNodes(JTree tree, int startingIndex, int rowCount) {
+    private void expandAllNodes(javax.swing.JTree tree, int startingIndex, int rowCount) {
         for (int i = startingIndex; i < rowCount; ++i) {
             tree.expandRow(i);
         }
@@ -138,18 +147,18 @@ public class TalendProjectView extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        javax.swing.JLabel jLabel1 = new javax.swing.JLabel();
         lblProjectName = new javax.swing.JLabel();
         lblProductVersion = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        javax.swing.JLabel jLabel4 = new javax.swing.JLabel();
         btnScan = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        javax.swing.JScrollPane jScrollPane1 = new javax.swing.JScrollPane();
         treeValidations = new javax.swing.JTree();
-        jLabel5 = new javax.swing.JLabel();
+        javax.swing.JLabel jLabel5 = new javax.swing.JLabel();
         lblCreationDate = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        javax.swing.JLabel jLabel7 = new javax.swing.JLabel();
         lblHost = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
+        javax.swing.JLabel jLabel9 = new javax.swing.JLabel();
         lblProjectLocation = new javax.swing.JLabel();
         lblScanSummary = new javax.swing.JLabel();
 
@@ -250,21 +259,4 @@ public class TalendProjectView extends javax.swing.JPanel {
                 .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
-
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnScan;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JLabel lblCreationDate;
-    private javax.swing.JLabel lblHost;
-    private javax.swing.JLabel lblProductVersion;
-    private javax.swing.JLabel lblProjectLocation;
-    private javax.swing.JLabel lblProjectName;
-    private javax.swing.JLabel lblScanSummary;
-    private javax.swing.JTree treeValidations;
-    // End of variables declaration//GEN-END:variables
 }
