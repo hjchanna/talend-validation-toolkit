@@ -20,7 +20,25 @@ jobs:
         - v1-dependencies-{{ checksum "pom.xml" }}
         # fallback to using the latest cache if no exact match is found
         - v1-dependencies-
-    - run: mvn package dependency:go-offline
+    
+    # Build the project
+    - run: 
+        name: Build the project
+        command: mvn package dependency:go-offline
+    
+    # Download and install GHR
+    - run:
+        name: Download and Install GitHub Release Tool (ghr)
+        command: |
+          wget -c https://github.com/tcnksm/ghr/releases/download/v0.12.0/ghr_v0.12.0_linux_amd64.tar.gz
+          tar -xvzf ghr_v0.12.0_linux_amd64.tar.gz
+    
+    - run:
+        name: Release to Github
+        command: |
+          VERSION=1.0.${CIRCLE_BUILD_NUM}
+          ./ghr_v0.12.0_linux_amd64/ghr -t ${GITHUB_PERSONAL_TOKEN} -u hjchanna -r talend-validation-toolkit -c ${CIRCLE_SHA1} -delete ${VERSION} ./talend-validation-tool/target/talend-validation-tool.jar
+    
     - save_cache:
         paths:
         - ~/.m2
