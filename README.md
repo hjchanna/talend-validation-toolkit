@@ -26,6 +26,8 @@ List<ValidationResponse> validationResponses = validationUtil.validateTalendProj
 ### As a Desktop Application
 Please download an run the `talend-validation-tool.jar` in the release section of this repository. The desktop application allows developers to locate Talend project clonned locally and validate them. 
 
+![Cat](https://raw.githubusercontent.com/hjchanna/talend-validation-toolkit/master/resources/screenshots/talend-validation-tool.PNG)
+
 ### As a Maven Plugin
 Add following plugin configuration to `pom.xml` of the Talend Project.
 ````
