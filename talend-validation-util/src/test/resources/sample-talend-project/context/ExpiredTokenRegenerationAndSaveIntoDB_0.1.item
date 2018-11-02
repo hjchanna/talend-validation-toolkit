@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" name="Default">
-  <contextParameter comment="" name="ConsumerKey" prompt="ConsumerKey?" promptNeeded="false" type="id_String" value="&quot;n08bYYi3ur1sngek5zAsjM3bYVYa&quot;"/>
-  <contextParameter comment="" name="ConsumerSecret" prompt="ConsumerSecret?" promptNeeded="false" type="id_String" value="&quot;XBBzMUnDUAflqtCjOlvlDWtTtCca&quot;"/>
-  <contextParameter comment="" name="restApiUrl" prompt="restApiUrl?" promptNeeded="false" type="id_String" value="&quot;http://192.168.200.40:8280/cost_center/v1.0/get_cost_center&quot;"/>
-  <contextParameter comment="" name="TokenURL" prompt="TokenURL?" promptNeeded="false" type="id_String" value="&quot;http://192.168.200.40:8280/token?grant_type=client_credentials&quot;"/>
-  <contextParameter comment="" name="LoopXpathQueryForExtractJSON" prompt="LoopXpathQueryForExtractJSON?" promptNeeded="false" type="id_String" value="&quot;/xrefs&quot;"/>
-  <contextParameter comment="" name="accessToken" prompt="accessToken?" promptNeeded="false" type="id_String" value="&quot;1d0f323bfa4eb4f774ddeb6518f2e5&quot;"/>
-</talendfile:ContextType>

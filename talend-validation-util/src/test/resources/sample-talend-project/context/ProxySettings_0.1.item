@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" confirmationNeeded="false" name="Default">
-  <contextParameter comment="" name="proxyHost" prompt="proxyHost?" promptNeeded="false" type="id_String" value="localhost"/>
-  <contextParameter comment="" name="proxyPort" prompt="proxyPort?" promptNeeded="false" type="id_String" value="3128"/>
-</talendfile:ContextType>

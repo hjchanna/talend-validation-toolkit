@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" name="Default">
-  <contextParameter comment="" name="LoopXpathQueryForExtractJSON" prompt="LoopXpathQueryForExtractJSON?" promptNeeded="false" type="id_String" value="&quot;/xrefs&quot;"/>
-  <contextParameter comment="" name="responseString" prompt="responseString?" promptNeeded="false" type="id_String" value="&quot;string&quot;"/>
-</talendfile:ContextType>
