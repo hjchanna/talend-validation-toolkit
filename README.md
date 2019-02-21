@@ -3,7 +3,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a08bce06c2d1487e8f98231176dae977)](https://www.codacy.com/app/hjchanna/talend-validation-toolkit?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=hjchanna/talend-validation-toolkit&amp;utm_campaign=Badge_Grade)
 [![codecov](https://codecov.io/gh/hjchanna/talend-validation-toolkit/branch/master/graph/badge.svg)](https://codecov.io/gh/hjchanna/talend-validation-toolkit)
 [![Releases](https://img.shields.io/github/release/hjchanna/talend-validation-toolkit.svg?style=flat)](https://github.com/hjchanna/talend-validation-toolkit/releases)
-> Talend Validation Toolkit is a development tool to help Talend developers programme Talend Projects that adheres to a coding standard. It automates the process of checking components for validation rules to spare humans of this boring (but important) task. This makes it ideal for projects that want to enforce a coding standard.
+> Talend Validation Toolkit is a static code analysis tool to motivate Talend developers to design Talend Projects that adheres to a coding standard. It automates the process of checking Talend components for validation rules and spare humans from this boring (but important) task. Talend Validation Toolkit ideal for Talend projects that want to enforce coding standards.
 
 ## Installing
 Talend Validation Toolkit can be used for multiple purposes and methods such as;
